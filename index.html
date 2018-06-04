@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Computer Studies Course - Zhetpisbayeva Aliya</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="fluid-gallery.css">
+
+
+</head>
+<body>
+
+<div class="container gallery-container">
+
+    <h1>Computer Studies - course of RTU</h1>
+    <p class="page-description text-center">Zhetpisbayeva Aliya<br>31.05.2018</p>
+
+    <div class="tz-gallery">
+
+        <div class="row">
+
+          <h1>Table of contents</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item disabled">Chapter 1 - Theoretical part</a>
+            <a href="#ref_1" class="list-group-item">1.1 Circuit calculation</a>
+            <a href="#ref_2" class="list-group-item">1.2 Check modeling with gEDA</a>
+            <a href="#ref_3" class="list-group-item">1.3 dvanced task: Modeling with QUCS</a>
+            <a href="#" class="list-group-item disabled">Chapter 2 - Practical part</a>
+            <a href="#ref_4" class="list-group-item">2.1 Work with gschem</a>
+            <a href="#ref_5" class="list-group-item">Reference</a>
+          </div>
+
+        </div>
+
+    </div>
+</div>
+
+    <div class="container gallery-container">
+        <div class="tz-gallery">
+            <div class="row">
+                <h1>Chapter 1</h1>
+                <h1>Theoretical part</h1>
+                <h2 id="ref_1" style="text-align:center">1.1 Circuit calculation</h2>
+
+                <ol>
+  <ol>
+    <li style="list-style:lower-roman;">the equivalent resistance,</li>
+    <li style="list-style:lower-roman;">the total current from the power&nbsp;supply,</li>
+    <li style="list-style:lower-roman;">the current through each resistor,</li>
+    <li style="list-style:lower-roman;">the voltage drop across each resistor, and</li>
+    <li style="list-style:lower-roman;">the power dissipated in each resistor.</li>
+  </ol>
+</ol>
+<ol>
+  <li><img src="https://physics.info/circuits-r/boring-series.svg"   style="margin:0em; width:24em; height:8.5em;"></li>
+  <li><img src="https://physics.info/circuits-r/boring-parallel.svg" style="margin:0em; width:24em; height:8.5em;"></li>
+</ol>
+
+            </div>
+
+            <div class="row">
+
+                <h2 id="ref_2" style="text-align:center">1.2 Check modeling with gEDA</h2>
+
+                <p>Start <code>gschem</code> with:</p>
+
+<pre cols="80"><code>gschem  my-schematic.sch
+</code></pre>
+
+<ul>
+<li>Press <code>[I]</code> to insert a part.  The text input focus will be in the <code>Filter</code> field.  Start typing a part code and the tree in the main view will simmer down to show only matching parts.  Some common parts are:
+
+<ul>
+<li><code>resistor</code>, <code>capacitor</code>, <code>diode</code></li>
+<li><code>pnp</code>, <code>npn</code></li>
+<li><code>gnd</code>, <code>vcc</code>, <code>vdd</code>, <code>12V-plus</code></li>
+<li><code>connector</code></li>
+</ul>
+</li>
+<li>Press <code>[OK]</code> to select a part and then use the left mouse button to add parts of that kind.  Press <code>[Esc]</code> when finished</li>
+<li>The short text such as <code>D?</code> next to the part is the reference designator, or refdes.  It can be selected independent of the part and edited with <code>[E]</code> then <code>[X]</code>.  The size and alignment of the text can be changed in that dialog too</li>
+<li>Zoom with the mouse wheel and scroll around by holding down the middle mouse button</li>
+<li>Press <code>[N]</code> to start laying a net in order to connect parts.  Press <code>[Esc]</code> when finished laying a net</li>
+<li>A net can be named by pressing <code>[A]</code> twice when a net is selected.  Nets with the same name are connected.  Using <code>Vcc</code> or <code>GND</code> for net names causes the net to be connected to those rails</li>
+<li>Click or drag the left mouse button to select elements.  Hold down the Shift key while doing this to add to the selection instead of replacing it</li>
+</ul>
+
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="images/figure_1_.jpg">
+                      <img src="images/figure_1_.jpg" alt="">
+                  </a>
+                  <caption>Figure 1.2 Image number 1 from screen</caption>
+              </div>
+            </div>
+              <div class="row">
+
+                  <h2 id="ref_3" style="text-align:center">1.3 Table creation</h2>
+                  <table class="table table-bordered">
+                          <thead>
+                              <tr>
+                                  <th>Row</th>
+                                  <th>First Name</th>
+                                  <th>Last Name</th>
+                                  <th>Email</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1</td>
+                                  <td>John</td>
+                                  <td>Carter</td>
+                                  <td>johncarter@mail.com</td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>Peter</td>
+                                  <td>Parker</td>
+                                  <td>peterparker@mail.com</td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td>John</td>
+                                  <td>Rambo</td>
+                                  <td>johnrambo@mail.com</td>
+                              </tr>
+                          </tbody>
+                      </table>
+              </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container gallery-container">
+        <div class="tz-gallery">
+            <div class="row">
+                <h1>Chapter 2</h1>
+                <h1>Practical part</h1>
+                <h2 id="ref_4" style="text-align:center">2.1 Work with ngspice</h2>
+                The following sections are meant to give an overview about what the Qucs software
+can be used for and how it is used to achieve this.<br><br>
+Qucs is free software licensed under the General Public License (GPL). It can be
+downloaded from
+http://qucs.sourceforge.net
+and comes with the complete
+source code.  Every user of the program is allowed and called upon (on a voluntary
+basis of course) to modify it for their purposes as long as changes are made public.
+Contact the authors to verify them and finally to incorporate it into the software.
+The software is available for a variety of operating systems including
+                <div class="row">
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="images/figure_1_.jpg">
+                          <img src="images/figure_1_.jpg" alt="">
+                      </a>
+                      <caption>Figure 2.1 - Image number 1 from screen</caption>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="images/figure_1_.jpg">
+                          <img src="images/figure_2_.jpg" alt="">
+                      </a>
+                      <caption>Figure 2.2 - Image number 2 from screen</caption>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="images/figure_1_.jpg">
+                          <img src="images/figure_3_.jpg" alt="">
+                      </a>
+                      <caption>Figure 2.3 - Image number 3 from screen</caption>
+                  </div>
+
+                </div>
+
+                Figure 1:  Qucs has been started
+On the left hand side you find the
+Projects
+folder opened.  Usually the projects
+folder  will  be  empty  if  you  use  Qucs  for  the  first  time.   The  large  area  on  the
+right hand side is the schematic area.  Above you can find the menu bar and the
+toolbars.<br><br>
+In the
+File
+→
+Application Settings
+menu the user can configure the language
+and appearance of Qucs.
+<br><br>
+In  the
+Content
+tab  you  will  find  all  data  related  to  the  project.   It  contains
+your schematics, the VHDL files, data display pages, datasets as well as any other
+data (e.g.  datasheets).  On the right hand side an “untitled” and empty schematic
+window is displayed.<br><br>
+Now you can start to edit the schematic.  The available components can be found
+in the
+Components
+tab.
+            </div>
+      </div>
+</div>
+<div class="container gallery-container" style="margin-top: 50px">
+    <div class="tz-gallery section">
+        <div class="row"></div>
+        <div class="row">
+            <h2 id="ref_5">Reference</h2>
+            <ol>
+              <li> HTML5 Tutorial - <a href="https://www.w3schools.com/html/" target="_blank">https://www.w3schools.com/html/</a>
+              <li> JavaScript Tutorial - <a href="https://www.w3schools.com/js/default.asp" target="_blank">https://www.w3schools.com/js/default.asp</a>
+              <li> CSS Tutorial - <a href="https://www.w3schools.com/css/" target="_blank">https://www.w3schools.com/css/</a>
+              <li> HTML Tutorial - <a href="https://www.quackit.com/html/tutorial/" target="_blank">https://www.quackit.com/html/tutorial/</a>
+              <li> Bootstrap 3 Tutorial - <a href="https://www.w3schools.com/bootstrap/default.asp" target="_blank">https://www.w3schools.com/bootstrap/default.asp</a>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
